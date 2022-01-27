@@ -1,6 +1,0 @@
-node_modules
-exports
-*.csv
-*.xlsx
-yarn.lock
-xlsx2csv.py
