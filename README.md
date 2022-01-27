@@ -2,7 +2,7 @@
 
 Scrapes data from the UDISE+ dashboard and generates a consolidated file for all states.
 
-* `test.js` runs the crawler and downloads the exported XLSX files locally.
+* `scrape.js` runs the crawler and downloads the exported XLSX files locally.
 * `convert.sh` uses the [xlsx2csv](https://github.com/dilshod/xlsx2csv) script to convert to CSV.
 * `aggregate.py` consolidates the data from individual CSVs to a single CSV.
 
@@ -16,8 +16,8 @@ You'll need to have npm or yarn installed on your machine. And Python 3.x.
 3. If you're on a UNIX system, run `chmod +x convert.sh` to make the shell script executable.
 
 ## How to use
-1. Edit the `test.js` file based on your requirements. You'll have to set the CSS selector path for the report that you are looking to scrape. Edit the `downloadData` function as per your need. Be sure to set sufficient timeout values.
-2. Run `node test.js`. It'll download the XLSX files in a new folder called **exports**.
+1. Edit the `scrape.js` file based on your requirements. You'll have to set the CSS selector path for the report that you are looking to scrape. Edit the `downloadData` function as per your need. Be sure to set sufficient timeout values.
+2. Run `node scrape.js`. It'll download the XLSX files in a new folder called **exports**.
 3. Edit the path in the `convert.sh` file as per your downloaded report.
 4. Run `./convert.sh`. It'll create CSV files for all the XLSX files in the same folder in **exports**.
 5. Edit the path and final output filename in the `aggregate.py` file. You might have to twiddle around with it more based on what the downloaded reports look like.

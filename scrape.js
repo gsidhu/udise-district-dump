@@ -27,7 +27,7 @@ const STATE_DROPDOWN = '.modal-body > .row > div:nth-child(1) > div:nth-child(1)
 const DISTRICT_DROPDOWN = '.modal-body > .row > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > select'
 const EXPORT_CSV = '.reportCard > li:nth-child(3) > img'
 
-const exportPath = '/Users/thatgurjot/Git Repos/udise-district-dump/exports/2004/'
+const exportPath = './exports/2004/'
 
 async function pullData(url) {
     await page.goto(url)
@@ -70,6 +70,3 @@ async function downloadData(page, i) {
     await download.delete()
 }
 pullData(url)
-// fs.writeFile('new.txt', result, function (err) {
-//     if (err) return console.log(err);
-// });

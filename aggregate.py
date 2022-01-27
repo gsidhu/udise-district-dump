@@ -2,7 +2,7 @@ from pprint import pprint
 import csv
 from os import listdir
 
-direc = "/Users/thatgurjot/Git Repos/udise-district-dump/exports/2011/"
+direc = "./exports/2011/"
 files = listdir(direc)
 
 j = 0
