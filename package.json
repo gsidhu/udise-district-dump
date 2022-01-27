@@ -1,0 +1,17 @@
+{
+    "name": "udise-district-dump",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Scrapes data from the UDISE+ dashboard.",
+    "exports": "./test.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Gurjot Sidhu",
+    "license": "ISC",
+    "dependencies": {
+      "playwright": "^1.17.1"
+    }
+  }
+  
